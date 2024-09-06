@@ -1,0 +1,288 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    color: #004080;
+}
+
+p {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Mentorship Section */
+.mentorship {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background-color: #f4f4f4;
+}
+
+.content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    background-color: #004080;
+    color: white;
+    border-radius: 5px;
+}
+
+.carousel img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+/* Trending Domains Section */
+.trending-domains {
+    padding: 2rem;
+    text-align: center;
+}
+
+.trending-domains h2 {
+    font-size: 2rem;
+}
+
+.domains a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    color: #004080;
+}
+
+/* Top Mentors Section */
+.top-mentors {
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.mentor-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.mentor-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.mentor-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mentor-info h3 {
+    font-size: 1.2rem;
+    color: #004080;
+    margin: 1rem 0;
+}
+
+.mentor-info p {
+    font-size: 0.9rem;
+}
+
+.view-profile {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #004080;
+    font-weight: bold;
+}
+
+/* Mentee Reviews Section */
+.mentee-reviews {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.mentee-reviews h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #004080;
+}
+
+.reviews-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+}
+
+.mentee-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.review-text h3 {
+    font-size: 1.3rem;
+    color: #004080;
+    margin-bottom: 0.5rem;
+}
+
+.rating span {
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+
+/* Statistics Section */
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: #004080;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 2rem 1.5rem;
+    background: linear-gradient(to right, #e0f7fa, #fdf3e6);
+    /* Light blue to very light golden gradient */
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+    /* Reduced width */
+    position: relative;
+    /* For the grain effect */
+    overflow: hidden;
+    /* Ensure the grain texture does not spill out */
+}
+
+.faq::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    /* Grainy texture */
+    opacity: 0.05;
+    /* Very subtle grain effect */
+    pointer-events: none;
+    /* Allow interaction with the content */
+}
+
+.faq h2 {
+    font-size: 1.6rem;
+    /* Reduced font size */
+    color: #d4af37;
+    /* Golden color */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.accordion {
+    background-color: #f0f8ff;
+    /* Very light blue */
+    color: #d4af37;
+    /* Golden color */
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 0.85rem;
+    /* Further reduced font size */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.3rem;
+    /* Spacing between items */
+}
+
+.accordion:hover {
+    background-color: #e0f7fa;
+    /* Slightly brighter light blue */
+}
+
+.panel {
+    padding: 0 0.5rem;
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+/* Accordion Active State */
+.accordion.active,
+.accordion:after {
+    background-color: #e0f7fa;
+    /* Light blue */
+    color: #fff;
+}
+
+.accordion:after {
+    content: '\002B';
+    /* Plus sign */
+    font-size: 1.2rem;
+    color: #d4af37;
+    /* Golden color */
+    float: right;
+}
